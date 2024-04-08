@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'NeueMachina-Light';
+    src: url('NeueMachina-Light.otf') format('opentype');
+    /* You may need to adjust the path to the font file based on your project structure */
+}
+
+@font-face {
+    font-family: 'NeueMachina-Regular';
+    src: url('NeueMachina-Regular.otf') format('opentype');
+    /* You may need to adjust the path to the font file based on your project structure */
+}
+@font-face {
+    font-family: 'trap';
+    src: url('Trap-Black.otf') format('opentype');
+    /* You may need to adjust the path to the font file based on your project structure */
+}
+@font-face {
+    font-family: 'NeueMachina-ultra';
+    src: url('NeueMachina-Ultrabold.otf') format('opentype');
+    /* You may need to adjust the path to the font file based on your project structure */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 1px;
+}
+:root {
+    --bgone: #070708;
+    --bgtwo: #110011;
+    /* --bgone: linear-gradient(to bottom, #110011 0%, #110011 100%); */
+    --secondarycolor: #d2945e;
+    --bordercolor: #1C1C21;
+    --greytext:#62646C;
+    --lightgrey:#E4E4E6;
+    --lightdark: #0E0E10;
+    }
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;  
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #202020;
+    }
+.maincontent{
+    background-image: url(Component\ 1.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+  
+}
+
+.donation a{
+    border: 1px solid linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.42%);
+padding-inline: 10px;
+padding-block: 9px;
+border-radius: 4px;
+text-decoration: none;
+font-weight: 300;
+font-family: Manrope;
+font-size: 15px;
+line-height: 27px;
+text-align: left;
+background-color: var(--secondarycolor);
+color: white;
+}
+
+.accentside{
+
+font-size: 16.1px;
+font-weight: 400;
+line-height: 23.87px;
+text-align: left;
+
+color: var(--lightgrey);
+}
+
+
+.accentdiv{
+    display: flex;
+    width: 100%;
+    font-size: 16.1px;
+font-weight: 400;
+line-height: 23.87px;
+text-align: left;
+padding: 20px;
+color: var(--lightgrey);
+    justify-content: space-between;
+}
+.accenttext{
+    width: 100%;
+    color: #d2945e;
+}
+
+.immc{
+    padding: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 400px;
+
+}
+.imgcar{
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.immc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+}
+.imgcarone{
+    width: 30%;
+    height: 400px;
+    
+    position: relative;
+}
+
+.carflex{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+.imgcartwo{
+    width: 50%;
+    height: 400px;
+    
+    position: relative;
+}
+
+.imgcarthree{
+    width: 100%;
+    filter: brightness(0.6);
+    height: 400px;
+    position: relative;
+
+    
+}
+.sideone img{
+    width: 100%;
+    height: 460px;
+    object-position: top;
+    object-fit: cover;
+}
+.mys{
+
+    display: flex;
+
+
+    position: absolute;
+    left: 120px;
+    margin-top: -60px;
+    transform: translate(-4px);
+  }
+  .mys img{
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: rotate(10deg);
+}
+
+.mystwo img{
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: rotate(-10deg);
+}
+  .mystwo{
+    width: 200px;
+  display: flex;
+  padding: 10px;
+
+    position: absolute;
+    left: 80%;
+    margin-top: 100px;
+  }
+.marquee{
+    display: flex;
+
+    margin-top: -3px;
+    background-color: var(--lightdark);
+}
+
+
+#marquee-container {
+    white-space: nowrap;
+    animation: marquee infinite linear;
+  }
+.accent{
+    width: 100%;
+    background-image: url('Ellipse\ 11.png');
+    height: 600px;
+    position: absolute;
+    top:740px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+    header{
+        width: 100%;
+        z-index: 9959;
+     padding-top: 20px;
+     border-radius: 21px;
+position: fixed;
+transition: 0.5s ease-in-out;
+        border: 1px solid;
+
+border-image-source: linear-gradient(180deg, rgba(205, 205, 205, 0.2) 0%, rgba(255, 255, 255, 0.22) 100%);
+
+
+
+    }
+
+    .container {
+        width: 1250px;
+        margin: auto;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    @media screen and (max-width:1300px) {
+        .container {
+            width: 97%;
+        }
+        
+    
+    }
+
+
+    header .container{
+        background: linear-gradient(270deg, rgba(50, 50, 50, 0.168) 8.49%, rgba(50, 50, 50, 0.144) 100%);
+    }
+    header .container{
+        background-color: transparent;
+        padding: 13px;
+        padding-inline: 19px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+    }
+.links{
+    display: flex;
+    gap: 20px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+font-size: 17px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+    header .logo{
+        font-size: 16px;
+        font-family: NeueMachina-ultra;
+    }
+
+    .maincontenthero {
+        padding-top: 50px;
+        color: white;
+        font-family: Trap;
+font-size: 85.81px;
+font-weight: 700;
+line-height: 82.9px;
+text-align: center;
+
+    }
+
+    .maincontenthero span{
+        color: var(--secondarycolor) ;
+    }
+
+    .subtext{
+        line-height: 21.82px;
+        width: 60%;
+        margin-inline: auto;
+        text-align: center;
+font-weight: 500;        
+        color: var(--lightgrey);
+    }
+
+    .mybtn{
+        font-family: Trap;
+        background-color: var(--secondarycolor);
+        border: 1px solid var(--secondarycolor);
+        color: var(--bgone);
+        padding: 17px;
+        border-radius: 6px;
+    }
+
+
+    .panorama-slider-wrapper {
+   margin-top: -100px;
+        overflow: hidden;
+      }
+      
+      .panorama-slider {
+         padding: 150px 30px;
+        width: 100%;
+        position: relative;
+        margin-top: -99px;
+        overflow: hidden;
+      /*   transform: rotate(15deg); */
+   
+      }
+      
+      .panorama-slider .swiper {
+        width: 100%;
+      /*   height: 280px; */
+        overflow: visible;
+      }
+      
+      .swiper-3d {
+        perspective: 1200px;
+      }
+      
+      .swiper-3d .swiper-wrapper,
+      .swiper-3d .swiper-slide {
+        transform-style: preserve-3d; 
+      }
+      
+      .swiper-3d .swiper-slide { 
+        width: 40%;
+        overflow: hidden;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        user-select: none;
+        height: 380px;
+        object-fit: cover;
+        transform: scale(1.2);
+        /* -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); */
+        transition: 0.5s ease-in-out;
+
+      }
+
+      .swiper-slide img:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      }
+
+      .scrolldown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -90px;
+    
+      }
+.scrolldown img{
+    width:130px;
+    height: 130px;
+    object-fit: contain;
+    animation: rotate 10s linear infinite;
+}
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+
+.navactive{
+    padding-top: 0px;
+    border-radius: 0;
+    background:  var(--lightdark);
+    padding: 3px;
+}
+
+      .navactive .container{
+         padding: 17px;
+        background: none;
+        border: none;
+      }
