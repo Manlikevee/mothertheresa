@@ -109,3 +109,35 @@ handleScroll();
   
     });
   })(jQuery);
+
+
+
+  gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
+
+gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
+
+
+gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
+    amount:1.2, from:"edges", ease:"bounce"
+  }})
+
+
+
+  var text = "Mother Teresa was born Agnes Gonxha Bojaxhiu, the daughter of an ethnic Albanian grocer. She went to Ireland in 1928 to join the Sisters of Loretto at the Institute of the Blessed Virgin Mary and sailed six weeks later to India, where she taught for 17 years at the order’s school in Calcutta (Kolkata).";
+
+// Typewriter effect function
+function typeWriter(text, i, subtextElement) {
+    if (i < text.length) {
+        subtextElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(function() {
+            typeWriter(text, i, subtextElement);
+        }, 40); // Adjust typing speed here (milliseconds)
+    }
+}
+
+// Trigger typewriter effect when page loads
+window.onload = function() {
+    var subtextElement = document.getElementById('subtext');
+    typeWriter(text, 0, subtextElement);
+};

@@ -102,7 +102,9 @@ text-align: left;
 color: var(--lightgrey);
 }
 
-
+header{
+    z-index: 99999999999999999999999999;
+}
 .accentdiv{
     display: flex;
     width: 100%;
@@ -234,7 +236,7 @@ color: var(--lightgrey);
 
     header{
         width: 100%;
-        z-index: 9959;
+        z-index: 9999999959;
      padding-top: 20px;
      border-radius: 21px;
 position: fixed;
@@ -319,6 +321,7 @@ text-align: center;
         text-align: center;
 font-weight: 500;        
         color: var(--lightgrey);
+        
     }
 
     .mybtn{
