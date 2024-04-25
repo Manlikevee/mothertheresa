@@ -112,14 +112,14 @@ handleScroll();
 
 
 
-  gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
+//   gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
 
-gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
+// gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
 
 
-gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
-    amount:1.2, from:"edges", ease:"bounce"
-  }})
+// gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
+//     amount:1.2, from:"edges", ease:"bounce"
+//   }})
 
 
 
@@ -140,7 +140,9 @@ function typeWriter(text, i, subtextElement) {
 
 
 
-// script.js
+
+
+
 window.addEventListener('load', function() {
   const progressBar = document.getElementById('progress-bar');
   const mainContent = document.getElementById('main-content');
@@ -166,58 +168,85 @@ window.addEventListener('load', function() {
 });
 
 
+var cursor = document.querySelector('.blob');
 
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
 
 
 const timelineEvents = [
   {
     year: "1910",
     date: "August 26",
-    event: "Agnes Gonxha Bojaxhiu is born in Skopje, now the capital of North Macedonia, then part of the Ottoman Empire."
+    event: "Agnes Gonxha Bojaxhiu is born in Skopje, now the capital of North Macedonia, then part of the Ottoman Empire.",
+    img: 'https://macedonia-timeless.com/img/mother-teresa-memorial-house.jpg'
+  
+  
+  
   },
   {
-    year: "1928 - 1929",
-    event: "Agnes decides to become a nun and leaves home to join the Sisters of Loreto in Ireland."
+    year: "1928",
+    event: "Makes First Vow with loreto sisters in Dublin",
+    img: 'https://media1.catholicireland.net/wp-content/uploads/2016/09/Mother-Teressa-as-a-Loreto-nun-banner.jpg'
   },
+
   {
-    year: "1929",
-    event: "Agnes arrives in Ireland and begins her novitiate with the Sisters of Loreto."
-  },
-  {
-    year: "1931",
-    event: "Agnes takes her first vows as a nun, adopting the name Sister Mary Teresa after Saint Thérèse of Lisieux."
-  },
-  {
-    year: "1937",
-    event: "Sister Teresa takes her final vows and becomes known as Mother Teresa."
+    year: "1934",
+    event: "Named principal of girls school in kolkata",
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTw-9OS2V-WE5ZLQXXTaf8-LMZbbO2GREvnEr2HLW2IGd5C72QuyOGHoOZAE4d0C9ew8&usqp=CAU"
   },
   {
     year: "1946",
-    event: "While traveling by train from Calcutta to Darjeeling for her annual retreat, Mother Teresa receives what she describes as a 'call within a call' from Jesus, urging her to leave the convent and work with the poorest of the poor in the slums of Calcutta."
+    event: "Receives Inner Call To Serve The Poor"
+    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kpWN6NAPp7O_TVZ1yUv-QuyqjbyJ5KedZ42HKwaQT9OFj5ABi1mVSkXW-cTArtJe92w&usqp=CAU'
   },
   {
     year: "1950",
-    event: "Mother Teresa founds the Missionaries of Charity, a Roman Catholic religious congregation that provides food, shelter, medical care, and other basic services to the destitute and dying."
+    event: "Established Missionary Of Charity"
+    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWPYCwZBkGMjAIgH9xLwdmy4JwSFBYlfSSVl4XQCS0CkjCEQ7e0q9cjF4LtGD_l_95Go&usqp=CAU'
   },
   {
     year: "1952",
-    event: "Mother Teresa opens her first home for the dying in Calcutta, where the terminally ill receive compassionate care in their final days."
+    event: "Opens Home For dying destitute in kolkata"
+    ,img: 'https://c8.alamy.com/comp/EH6HE6/mother-teresas-home-for-the-dying-destitute-nirmal-hriday-EH6HE6.jpg'
+  },
+  {
+    year: "1965",
+    event: "Receives pontificial approval for her order"
+    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbAmq7Bi81Bv6DcbQEPWXWMoKwLvZ2-tlsSSTbEfy3BuGcu6byqbBHhawcXmXZ0X7V3A&usqp=CAU'
+  },
+  {
+    year: "1971",
+    event: "Receives first pope John XXIII Peace Price established first U.S foundation of her order"
+    ,img: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/pope-awards-peace-prize-to-mother-teresa-bettmann.jpg'
   },
   {
     year: "1979",
-    event: "Mother Teresa is awarded the Nobel Peace Prize for her tireless efforts to alleviate the suffering of the poor and marginalized."
+    event: "Mother Teresa is awarded the Nobel Peace Prize for her tireless efforts to alleviate the suffering of the poor and marginalized.",
+    img: 'https://albaniandailynews.com/foto/2023/12/20231210100102_art.jpg'
   },
   {
     year: "1980s - 1990s",
-    event: "Mother Teresa's fame grows worldwide, and she becomes an iconic figure of compassion and selflessness."
+    event: "Resigns as head of order, but reelected in unanimous vote"
+    ,img: ''
   },
   {
     year: "1997",
+    event: "Receives nobel peace prize"
+    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwBzmZh2WCnT2qdwklzLRymLIXeO4vhpoN7cr8ALto0gZWIt3rq3Cc7m9UU0pDwpC6r8&usqp=CAU'
+  },
+  {
+    year: "2003",
     event: "Mother Teresa passes away at the age of 87 in Calcutta, leaving behind a legacy of love, service, and devotion to the poorest of the poor."
+    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNb0y-6jDPBJj22AXQHZ55-DbAqZNZx3qvM1O9osDENpBbznWTnGPUi4qgfEvOdthik1Y&usqp=CAU'
   },
   {
     year: "2016",
-    event: "Pope Francis declares Mother Teresa a saint of the Roman Catholic Church during a canonization ceremony at the Vatican."
+    event: "Pope Francis declares Mother Teresa a saint of the Roman Catholic Church during a canonization ceremony at the Vatican.",
+    img:'https://static.india.com/wp-content/uploads/2016/08/Mother-Teresa-Photo-by-CM-Mamata-Banerjee.jpg?impolicy=Medium_Resize&w=1200&h=800'
   }
 ];
 
@@ -244,6 +273,16 @@ timelineEvents.forEach(event => {
       <div class="imgcar">
         <div class="carflex">
 
+        <div class="imgcarthree">
+        ${event.img? 
+          (
+            `<img src="${event.img}" alt="" loading="lazy"></img>`
+          ) 
+          :
+           ('') 
+          }
+</div>
+ 
         </div>
       </div>
     </div>
