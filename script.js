@@ -296,7 +296,20 @@ timelineEvents.forEach(event => {
   timelineContainer.appendChild(listItem);
 });
 
-
+function toggleFullScreen() {
+  var elem = document.documentElement;
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch(err => {
+      alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen().catch(err => {
+        alert(`Error attempting to exit full-screen mode: ${err.message} (${err.name})`);
+      });
+    }
+  }
+}
 
 // <div class="imgcarthree">
 // <img src="6e94efc4-c0ca-11ed-8678-0210609a3fe2.jpg" alt="">
