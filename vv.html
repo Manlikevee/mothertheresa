@@ -1,7 +1,22 @@
 
 
 
-  
+<script>
+    // Function to update the href attribute of the last <a> tag
+    function updateLastLink() {
+        // Get the last <li> element with class "nav-item"
+        var lastNavItem = document.querySelector('.navbar-nav').lastElementChild;
+        // Get the <a> tag within the last <li> element
+        var lastNavLink = lastNavItem.querySelector('a');
+        // Update the href attribute
+        lastNavLink.href = 'https://boardseats.io/insights';
+    }
+
+    // Call the function when the page loads
+    window.onload = function() {
+        updateLastLink();
+    };
+</script>
   
   
   <style>
@@ -2118,7 +2133,7 @@ width: 95% !important;
                         </div>
                         <div class="slidecard"> <span><img src="/documents/20121/0/Group 1000000811.svg" alt=""></span> Create Your Boardseats Account</div>
                         <div class="slidecard"><span><img src="/documents/20121/0/Group 1000000812.svg" alt=""></span> Create Your Company Profile And Preference</div>
-                        <div class="slidecard"><span><img src="/documents/20121/0/Group 1000000813.svg" alt=""></span>Access Professionals &amp; Find Boaard Match</div>
+                        <div class="slidecard"><span><img src="/documents/20121/0/Group 1000000813.svg" alt=""></span>Access Professionals &amp; Find Board Match</div>
                     </div>
                 </div>
             </div>
@@ -2291,7 +2306,7 @@ width: 95% !important;
         
          
         
-        
+<!--         
           <section class="guide_tips">
               <div class="guide_container">
                   <div class="guide_container_header">
@@ -2310,12 +2325,12 @@ width: 95% !important;
                   </div>
         
                   <div class="readmorebtn" style="display: flex; margin-top: 30px; align-items: center; justify-content: center;">
-                    <!-- <div class="offerbutton">
+                     <div class="offerbutton">
                         <a href="/insights" class="offerbtn">Read More →</a>
-                    </div> -->
+                    </div> 
                   </div>
               </div>
-          </section>
+          </section> -->
         
         
           </div> 
