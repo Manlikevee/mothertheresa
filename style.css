@@ -1513,6 +1513,19 @@ border-radius: 5px;
   .links{
     display: none;
   }
+
+  .swiper-3d .swiper-slide{
+    width: 80%;
+  }
+  .c-accordion__item, .c-accordion__item:focus-within, .c-accordion__item:target{
+    width: 100%;
+  }
+  .c-accordion{
+    flex-direction: column;
+  }
+  .c-accordion__item:hover, .c-accordion__item:focus-within, .c-accordion__item:target{
+    width: 100%;
+  }
   .mys {
     z-index: 0;
     display: flex;
