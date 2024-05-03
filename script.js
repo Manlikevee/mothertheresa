@@ -181,7 +181,7 @@ window.addEventListener('load', function() {
         }, 1000);
       }, 1000);
     }
-  }, 50); // Adjust the speed of progress
+  }, 10); // Adjust the speed of progress
 });
 
 
@@ -334,6 +334,6 @@ function toggleFullScreen() {
 
 
 function navtoggle(){
-  const links = document.getElementById('navlinks').classList.toggle('navactive')
+  const links = document.getElementById('navlinks').classList.toggle('navlinkactive')
 }
 

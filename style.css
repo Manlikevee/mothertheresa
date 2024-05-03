@@ -1508,29 +1508,57 @@ border-radius: 5px;
   
 }
 
-
+.links{
+  transition: 0.5s ease-in;
+}
+.donat, .toggle{
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .links {
     display: none;
     position: absolute;
     flex-direction: column;
     top: 106%;
-    background: var(--bgone);
+    background: var(--lightdark);
     width: 90%;
     padding: 0px;
     padding-block: 20px;
     color: black;
     height: 0px;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
 
-.navactive{
+    transition: 0.5s ease-in;
+}
+.valuegrid{
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.toggle{
   display: flex;
-  height: 300px;
-  padding: 10px;
+  cursor: pointer;
 }
 
+.navlinkactive{
+  display: flex;
+  height: fit-content;
+  padding: 20px;
+  transition: 0.5s ease-in;
+}
+.donat{
+  border: 1px solid linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.42%);
+  padding-inline: 10px;
+  padding-block: 9px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 300;
+  width: fit-content;
+  font-family: Manrope;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: left;
+  background-color: var(--secondarycolor);
+  color: white;
+  display: flex;
+}
 .donation{
   display: none;
 }
