@@ -1510,10 +1510,30 @@ border-radius: 5px;
 
 
 @media screen and (max-width: 600px) {
-  .links{
+  .links {
     display: none;
-  }
+    position: absolute;
+    flex-direction: column;
+    top: 106%;
+    background: var(--bgone);
+    width: 90%;
+    padding: 0px;
+    padding-block: 20px;
+    color: black;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
 
+.navactive{
+  display: flex;
+  height: 300px;
+  padding: 10px;
+}
+
+.donation{
+  display: none;
+}
   .swiper-3d .swiper-slide{
     width: 80%;
   }

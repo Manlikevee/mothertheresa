@@ -247,8 +247,8 @@ const timelineEvents = [
   },
   {
     year: "1980s - 1990s",
-    event: "Resigns as head of order, but reelected in unanimous vote"
-    ,img: ''
+    event: "Resigns as head of order, but reelected in unanimous vote",
+    img: 'https://media1.catholicireland.net/wp-content/uploads/2016/09/Mother-Teressa-as-a-Loreto-nun-banner.jpg'
   },
   {
     year: "1997",
@@ -331,3 +331,9 @@ function toggleFullScreen() {
 // <div class="imgcarthree">
 // <img src="6e94efc4-c0ca-11ed-8678-0210609a3fe2.jpg" alt="">
 // </div>
+
+
+function navtoggle(){
+  const links = document.getElementById('navlinks').classList.toggle('navactive')
+}
+
