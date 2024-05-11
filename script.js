@@ -166,7 +166,7 @@ window.addEventListener('load', function() {
 
   let progress = 0;
   const interval = setInterval(function() {
-    progress += 1;
+    progress += 5; // Incrementing by 2% instead of 1%
     progressBar.style.width = progress + '%';
 
     if (progress >= 100) {
@@ -181,7 +181,7 @@ window.addEventListener('load', function() {
         }, 1000);
       }, 1000);
     }
-  }, 10); // Adjust the speed of progress
+  }, 5); // Decreased interval to 5 milliseconds
 });
 
 
