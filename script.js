@@ -258,12 +258,12 @@ const timelineEvents = [
   {
     year: "2003",
     event: "Mother Teresa passes away at the age of 87 in Calcutta, leaving behind a legacy of love, service, and devotion to the poorest of the poor."
-    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNb0y-6jDPBJj22AXQHZ55-DbAqZNZx3qvM1O9osDENpBbznWTnGPUi4qgfEvOdthik1Y&usqp=CAU'
+    ,img: 'https://www.hindustantimes.com/ht-img/img/2023/09/15/1600x900/Mother-Teresa-s-funeral-was-held-in-Calcutta-on-Se_1694802620326.jpg'
   },
   {
     year: "2016",
     event: "Pope Francis declares Mother Teresa a saint of the Roman Catholic Church during a canonization ceremony at the Vatican.",
-    img:'https://static.india.com/wp-content/uploads/2016/08/Mother-Teresa-Photo-by-CM-Mamata-Banerjee.jpg?impolicy=Medium_Resize&w=1200&h=800'
+    img:'https://media.glamour.com/photos/57cc575aa8042f882b69d7c1/master/w_2560%2Cc_limit/GettyImages-599722704.jpg'
   }
 ];
 
