@@ -674,9 +674,9 @@ font-weight: 500;
         object-fit: cover;
         height: 30px;
       }
-.logo span{
+/* .logo span{
   color: #BF841A;
-}
+} */
       .preloader .logo{
         width: 120px;
         height: 120px;
