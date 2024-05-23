@@ -252,8 +252,8 @@ const timelineEvents = [
   },
   {
     year: "1997",
-    event: "Receives nobel peace prize"
-    ,img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwBzmZh2WCnT2qdwklzLRymLIXeO4vhpoN7cr8ALto0gZWIt3rq3Cc7m9UU0pDwpC6r8&usqp=CAU'
+    event: "SUCCESSOR TO MOTHER TERESA IS NAMED ORDER'S SENIOR NUNS ELECT FORMER HINDU WHO ONCE HEADED NEW YORK RETREAT HOUSE"
+    ,img: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/sister-nirmala_647_062315094750.jpg?VersionId=ddSMqgyavxHBpXby9PJaJnwYPfOhnkkK&size=690:388'
   },
   {
     year: "2003",
