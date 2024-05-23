@@ -639,7 +639,9 @@ font-weight: 500;
     background:  var(--lightdark);
     padding: 3px;
 }
-
+.navactive .logo span{
+  color: #BF841A;
+}
       .navactive .container{
          padding: 17px;
         background: none;
