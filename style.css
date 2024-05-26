@@ -4,25 +4,23 @@
 
 
 @font-face {
-    font-family: 'NeueMachina-Light';
-    src: url('NeueMachina-Light.otf') format('opentype');
-    /* You may need to adjust the path to the font file based on your project structure */
+  font-family: 'NeueMachina-Light';
+  src: url('https://raw.githubusercontent.com/Manlikevee/mothertheresa/main/NeueMachina-Light.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'NeueMachina-Regular';
-    src: url('NeueMachina-Regular.otf') format('opentype');
-    /* You may need to adjust the path to the font file based on your project structure */
+  font-family: 'NeueMachina-Regular';
+  src: url('https://raw.githubusercontent.com/Manlikevee/mothertheresa/main/NeueMachina-Regular.otf') format('opentype');
 }
+
 @font-face {
-    font-family: 'trap';
-    src: url('Trap-Black.otf') format('opentype');
-    /* You may need to adjust the path to the font file based on your project structure */
+  font-family: 'trap';
+  src: url('https://raw.githubusercontent.com/Manlikevee/mothertheresa/main/Trap-Black.otf') format('opentype');
 }
+
 @font-face {
-    font-family: 'NeueMachina-ultra';
-    src: url('NeueMachina-Ultrabold.otf') format('opentype');
-    /* You may need to adjust the path to the font file based on your project structure */
+  font-family: 'NeueMachina-ultra';
+  src: url('https://raw.githubusercontent.com/Manlikevee/mothertheresa/main/NeueMachina-Ultrabold.otf') format('opentype');
 }
 
 body{
